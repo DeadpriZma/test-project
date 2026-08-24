@@ -22,3 +22,5 @@ git add . = stages all changes in the current directory and below
 git add -A = stages all changes in the entire repo, regardless of cwd
 
 git remote add origin (GHub Quick Set Up Link Here) = Connects VSC to GitHub, making Git changes in VSC view-able in GitHub
+
+git push -u origin main = push changes in the staged area to the main branch in GitHub (the "-u" stands for "Upstream")
