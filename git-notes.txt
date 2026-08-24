@@ -1,0 +1,24 @@
+mkdir "repo-name-here" = creates a directory
+
+git init = initialized the current directory as a git respository by creating a hidden .git directory with all configs it needs
+
+git commit -m "Message here" = Saves the staged changes as a commit
+
+git add (file path here) = Adds the file to the staging phase
+
+git status = to see what needs to be committed or tracked
+
+git log = all changes with date, editor name, email, and comment shown below (PRESS Q TO QUIT LOGS)
+
+git add -p (file path here) = git walks your through each change made in that specific file, called a hunk
+
+git restore --staged (file path here) = moves file back out of the staging area
+
+git resture (file path here) = Whatever you had in the staged area becomes what is in the editing area, restoring what you saved back to your screen
+
+THE LOOP: ( Edit -> Status -> Add -> Status -> Commit -> Status ) -> ( Edit -> ... )
+
+git add . = stages all changes in the current directory and below
+git add -A = stages all changes in the entire repo, regardless of cwd
+
+git remote add origin (GHub Quick Set Up Link Here) = Connects VSC to GitHub, making Git changes in VSC view-able in GitHub
