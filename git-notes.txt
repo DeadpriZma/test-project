@@ -13,10 +13,9 @@ git log = all changes with date, editor name, email, and comment shown below (PR
 git add -p (file path here) = git walks your through each change made in that specific file, called a hunk
 
 git restore --staged (file path here) = moves file back out of the staging area
+git restore (file path here) = Whatever you had in the staged area becomes what is in the editing area, restoring what you saved back to your screen
 
-git resture (file path here) = Whatever you had in the staged area becomes what is in the editing area, restoring what you saved back to your screen
-
-THE LOOP: ( Edit -> Status -> Add -> Status -> Commit -> Status ) -> ( Edit -> ... )
+THE LOOP: ( Edit -> Status -> Add -> Status -> Commit -> Status ) -> ( Edit -> ... ) DO NOT COMMIT DIFFERENT SUBJECTS AS 1 SINGLE COMMIT
 
 git add . = stages all changes in the current directory and below
 git add -A = stages all changes in the entire repo, regardless of cwd
@@ -24,3 +23,10 @@ git add -A = stages all changes in the entire repo, regardless of cwd
 git remote add origin (GHub Quick Set Up Link Here) = Connects VSC to GitHub, making Git changes in VSC view-able in GitHub
 
 git push -u origin main = push changes in the staged area to the main branch in GitHub (the "-u" stands for "Upstream")
+^- Only has to be done once to show GitHub that you always want to push to main, every other time just do "git push"
+
+git log = full log with author, date, message
+git log --oneline = compact: one line per commit
+git show a1b2c3d = show diff and metadata for one commit
+
+git commit -m "(SUBJECT)" \ -m "(BODY)"
